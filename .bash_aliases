@@ -1,0 +1,70 @@
+# Unix commands.
+alias ll='ls -lhA'
+alias cd..='cd ..'
+alias clip='xclip -selection clipboard'
+alias sn='screen'
+alias tb='conda activate torch; tensorboard --logdir'
+alias diskspace='df -h ${HOME}'
+alias h='fc -l'
+alias resource='source ${HOME}/.bashrc'
+alias basha='vim ${HOME}/.bash_aliases'
+alias myfind='find . -name '
+alias hist='history'
+
+alias pya='ps ax | grep "python3"'
+alias pyk='kill $(ps ax | grep "python3" | cut -d " " -f 1)'
+alias py='python3'
+alias tba='ps ax | grep tensorboard'
+alias tbk='kill $(ps ax | grep "tensorboard" | cut -d " " -f 1)'
+alias hgrep='fc -l -1000 | grep '
+alias remote='cd $HOME/remote'
+
+# Python shortcut.
+mypy3="/usr/bin/python -ic "
+mypy3+="'"  # Start quote.
+mypy3+="import os, sys, logging, collections, functools, bisect, math, argparse, tqdm, time, json; "
+mypy3+="import numpy as np; import numpy.random as npr; import matplotlib.pyplot as plt; import seaborn as sns; "
+mypy3+="import torch; from torch import nn, optim; import torchvision as tv; import torchvision.transforms as tr; import torch.nn.functional as F; import itertools; import pickle; import imageio; import statistics; import datetime; import opacus; import copy;  "
+mypy3+="a = npr.randn(3, 4); t = torch.randn(3, 4); l = nn.Linear(10, 10); s = torch.randn(1000, 1000) ; s = s @ s.T; "
+mypy3+="device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\"); "
+mypy3+="import uuid; import itertools; import transformers; "
+mypy3+="import nltk; "
+mypy3+="import einops; "
+mypy3+="import resource; "
+mypy3+="import pathlib; "
+mypy3+="h = help; log = np.log; import pandas as pd; import re; "
+mypy3+="'"  # End quote.
+alias mypy3=${mypy3}
+
+# Git specifics.
+alias st='git status'
+alias pull='git pull'
+alias push='git push'
+alias pushtags='git push origin --tags'
+alias br='git branch'
+alias add='git add'
+alias cm='git commit'
+alias scm='SKIP=flake8,isort,black git commit'
+alias dif='git diff'
+alias branch='git branch'
+alias cdif='git diff --staged'
+alias master='git checkout master'
+alias jnote='jupyter-notebook'
+alias jlab='jupyter-lab'
+alias gcheck='git checkout'
+alias rebase='git rebase'
+alias gbc='git rebase --continue'
+
+# Anaconda.
+alias act='conda activate'
+alias deact='conda deactivate'
+
+# Personal.
+reinst () {
+  pip uninstall -y ml-swissknife
+  pip install git+https://github.com/lxuechen/ml-swissknife.git
+}
+
+export ANNOTATION_DATA_PATH="/data/xuechen/annotation_data"
+alias mydir='cd "${XAI_JOB_DIRECTORY}/workdir/xai/x/xuechen"'
+alias code='cd "${XAI_JOB_DIRECTORY}/workdir/xai'
