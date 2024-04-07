@@ -66,5 +66,6 @@ reinst () {
 }
 
 export ANNOTATION_DATA_PATH="/data/xuechen/annotation_data"
+export SFT_DATA_PATH="/data/datasets/sft-data"
 alias mydir='cd "${XAI_JOB_DIRECTORY}/workdir/xai/x/xuechen"'
 alias code='cd "${XAI_JOB_DIRECTORY}/workdir/xai'
