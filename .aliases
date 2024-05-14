@@ -66,6 +66,7 @@ reinst () {
 }
 
 export ANNOTATION_DATA_PATH="/data/xuechen/annotation_data"
+export PROJECT_FIX_PATH="/data/xuechen/annotation_data/project_fix"
 export SFT_DATA_PATH="/data/datasets/sft-data"
 export MY_CKPT_PATH="/data/checkpoints/xuechen"
 export MY_CKPT_RESHARD_PATH="/data/checkpoints/xuechen/reshard"
