@@ -12,12 +12,14 @@ alias myfind='find . -name '
 alias hist='history'
 
 alias pya='ps ax | grep "python3"'
-alias pyk='kill $(ps ax | grep "python3" | cut -d " " -f 1)'
+alias pyk='kill $(ps ax | grep "python" | cut -d " " -f 1)'
+alias py3k='kill $(ps ax | grep "python3" | cut -d " " -f 1)'
 alias py='python3'
 alias tba='ps ax | grep tensorboard'
 alias tbk='kill $(ps ax | grep "tensorboard" | cut -d " " -f 1)'
 alias hgrep='fc -l -1000 | grep '
 alias remote='cd $HOME/remote'
+alias gpu='nvidia-smi'
 
 # Python shortcut.
 mypy3="/usr/bin/python -ic "
