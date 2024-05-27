@@ -90,3 +90,6 @@ export MY_CKPT_RESHARD_PATH="/data/checkpoints/xuechen/reshard"
 
 alias mydir='cd "${XAI_JOB_DIRECTORY}/workdir/xai/x/xuechen"'
 alias code='cd "${XAI_JOB_DIRECTORY}/workdir/xai"'
+alias sft='cd ${XAI_JOB_DIRECTORY}/workdir/xai/train/scripts/sft'
+alias xlm='cd ${XAI_JOB_DIRECTORY}/workdir/xai/train/xlm'
+alias posttrain='cd ${XAI_JOB_DIRECTORY}/workdir/xai/train/xlm/posttrain'
